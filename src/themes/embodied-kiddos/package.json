@@ -1,0 +1,19 @@
+{
+  "name": "embodied-kiddos",
+  "version": "1.0.0",
+  "description": "information website for Embodied Kiddos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxobaxo/embodied-kiddos.git"
+  },
+  "author": "Max Scher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxobaxo/embodied-kiddos/issues"
+  },
+  "homepage": "https://github.com/maxobaxo/embodied-kiddos#readme"
+}

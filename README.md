@@ -1,2 +1,3 @@
-# embodied-kiddos
-Website for Embodied Kiddos
+# Embodied Kiddos
+
+Informational Website for Embodied Kiddos
