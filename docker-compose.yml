@@ -31,7 +31,7 @@ services:
        WORDPRESS_DB_PASSWORD: secret
        WORDPRESS_DEBUG: 1
        VIRTUAL_HOST: www.embodiedkiddos.com
-       VIRTUAL_PORT: 8000
+       VIRTUAL_PORT: "8000"
        LETSENCRYPT_HOST: www.embodiedkiddos.com
 volumes:
     db_data:
