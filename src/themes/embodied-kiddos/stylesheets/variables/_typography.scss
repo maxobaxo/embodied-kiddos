@@ -1,0 +1,116 @@
+@import './fonts/ibarra_real_nova';
+@import './fonts/raleway';
+
+$font-family-serif: "IbarraRealNova", "Georgia", serif;
+$font-family-sans: "Raleway", "Source Sans Pro", sans-serif;
+
+$font-sizes: (
+  'base': 1rem,
+  'xs': 1rem,
+  'sm': 1.25rem,
+);
+
+h1,
+.h1 {
+  font-family: $font-family-sans;
+  font-size: 3rem;
+  // line-height: 3rem;
+  font-weight: bold;
+  @media screen and (min-width: 768px) {
+    font-size: 3.875rem;
+    // line-height: 3.875rem;
+  }
+  &.no-wrap {
+    white-space: nowrap;
+  }
+  &.is-page-title {
+    text-shadow: 0px 2px 4px rgba(5, 5, 5, 0.5);
+  }
+  &.is-display {
+    font-size: 4.1875rem;
+    // line-height: 4.1875rem;
+    letter-spacing: 2.64px;
+    font-family: $font-family-sans;
+    font-weight: 500;
+    text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+      font-size: 4.75;
+      // line-height: 4.75;
+      letter-spacing: 3px;
+    }
+  }
+}
+
+h2,
+.h2 {
+  @extend .h1;
+  font-size: 2rem;
+  // line-height: 2rem;
+  @media screen and (min-width: 768px) {
+    font-size: 2.3125rem;
+    // line-height: 2.3125rem;
+  }
+}
+
+h3,
+.h3 {
+  @extend .h1;
+  font-size: 1.4375rem;
+  // line-height: 29px;
+  @media screen and (min-width: 768px) {
+    font-size: 1.625rem;
+    // line-height: 32px;
+  }
+}
+
+h4,
+.h4 {
+  @extend .h1;
+  font-size: 1rem;
+  // line-height: 25px;
+  letter-spacing: 1.72px;
+  text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    font-size: 1.125rem;
+    // line-height: 21px;
+  }
+
+}
+
+body {
+  font-family: $font-family-serif;
+  font-size: 1rem;
+  line-height: 1.4375;
+}
+
+a, a:visited {
+  color: map-get($colors, 'primary');
+  font-family: inherit;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.lead {
+  font-family: $font-family-sans;
+  font-weight: 100;
+  font-size: 1.5rem;
+  line-height: 1.29;
+  @media screen and (min-width: 768px) {
+    font-size: 1.8125rem;
+    line-height: 1.24;
+  }
+}
+
+.blockquote {
+  font-family: $font-family-sans;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  @media screen and (min-width: 768px) {
+    font-size: 1.4375rem;
+    line-height: 1.43;
+  }
+}

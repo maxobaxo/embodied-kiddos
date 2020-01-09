@@ -1,0 +1,16 @@
+/*
+  style.scss - Index file for all scss
+  This is the file that gets targeted by the compiler
+  The file should not have any rules in it, only import statements
+*/
+// Variable Imports
+@import "variables/index";
+
+// Global Imports
+@import "global";
+
+// Component Imports
+@import "components/index";
+
+// WP Overrides
+@import "wp_overrides";

@@ -1,0 +1,13 @@
+.site-header {
+  background-color: map-get($colors, 'champagne');
+  .site-branding {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .site-description {
+    @extend .lead;
+  }
+}
+

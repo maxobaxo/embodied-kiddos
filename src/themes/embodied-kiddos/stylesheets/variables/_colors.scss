@@ -1,0 +1,21 @@
+@use "sass:map";
+
+$palette: (
+  'black': #000000,
+  'white': #ffffff,
+  'primary': #33614C,
+  'secondary': #092B4C,
+  'gold': #C48600,
+  'peach': #FAC7A0,
+  'champagne': #F0E7CE
+);
+
+$shades: (
+
+);
+
+
+$colors: map-merge(
+  $palette,
+  $shades
+);

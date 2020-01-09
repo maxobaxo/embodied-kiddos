@@ -1,0 +1,67 @@
+/*
+* For Globally Targeted Elements
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-serif;
+  font-size: 1rem;
+  line-height: 1;
+  color: map-get($colors, 'black');
+}
+
+label {
+  font-family: $font-family-serif;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 0.5rem;
+}
+
+// Link Wrapper utility
+.link-wrapper {
+  color: map-get($colors, 'black');
+  margin-bottom: map-get($space, 'sm');
+  display: block;
+  position: relative;
+  &:hover {
+    color: map-get($colors, 'primary');
+  }
+}
+
+ul {
+  &.is-inline {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 0;
+    > * {
+      &:not(:first-child) {
+        padding-left: map-get($space, 'xs');
+      }
+    }
+  }
+}
+
+button:focus, select:focus, input:focus, .form-control:focus {
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid map-get($colors, 'primary');
+}
+
+body.admin-bar {
+  header {
+    margin-top: 32px !important; // Note: I'm sorry
+  }
+  .ek--subnav {
+    margin-top: 32px !important; // Note: I'm sorry
+  }
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
