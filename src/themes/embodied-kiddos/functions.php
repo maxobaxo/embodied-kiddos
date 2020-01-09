@@ -121,7 +121,7 @@ add_action( 'widgets_init', 'embodied_kiddos_widgets_init' );
  */
 function embodied_kiddos_scripts() {
 	wp_enqueue_style( 'embodied-kiddos-style', get_stylesheet_uri() );
-
+	wp_enqueue_style( 'embodied-kiddos-webpack-style', get_template_directory_uri() . '/dist/main.css', array(), '20200107, true');
 	wp_enqueue_script( 'embodied-kiddos-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'embodied-kiddos-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
