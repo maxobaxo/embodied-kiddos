@@ -10,8 +10,10 @@ $palette: (
   'champagne': #F0E7CE
 );
 
-$shades: (
+$peach: map-get($palette, 'peach');
 
+$shades: (
+  'peach-lighter': darken($peach, 66%)
 );
 
 

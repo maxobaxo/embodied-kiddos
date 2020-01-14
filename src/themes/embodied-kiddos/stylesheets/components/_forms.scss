@@ -1,0 +1,38 @@
+
+.mc4wp-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .subscribe {
+    display: flex;
+    input, button {
+      padding: map-get($space, 'xs') map-get($space, 'sm');
+      font-family: $font-family-serif;
+      font-size: map-get($font-sizes, 'xs');
+      color: map-get($colors, 'secondary');
+      border: map-get($colors, 'peach') 2px solid;
+      border-radius: 5px;
+    }
+    input {
+      margin-right: map-get($space, 'xs');
+      &::placeholder {
+        color: map-get($colors, 'secondary');
+      }
+      &:focus {
+        border: map-get($colors, 'secondary') 2px solid;
+      }
+    }
+    button {
+      font-weight: bold;
+      font-style: italic;
+      cursor: pointer;
+      background-color: map-get($colors, 'peach');
+      transition: all 0.3s ease;
+      &:hover {
+        color: map-get($colors, 'peach');
+        background-color: map-get($colors, 'secondary');
+      }
+    }
+  }
+}
