@@ -17,8 +17,8 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
-
+			<p class="newsletter-invite">Subscribe to get updates on news, events, and service offerings</p>
+			<?php echo do_shortcode('[mc4wp_form id="8"]'); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
