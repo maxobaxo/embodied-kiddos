@@ -1,0 +1,27 @@
+image: alpine:latest
+
+stages:
+  - build
+  - deploy
+
+cache:
+  key: "$CI_BUILD_NAME"
+  paths:
+    - node_modules/
+    - apt-cache
+
+build:
+  stage: build
+
+deploy:
+  stage: deploy
+  dependencies:
+    - build
+  before_script:
+    - echo -e "$DEPLOYER_SSH_KEY" > deploykey.pem
+    - chmod 400 deploykey.pem
+    - printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list
+  script:
+    - ssh -i deploykey.pem -o StrictHostKeyChecking=no root@$SERVER_IP 'mkdir -p /var/www/prod/themes && mkdir -p  /var/www/prod/themes/embodied-kiddos'
+    - rsync -zrSlh -e "ssh -i deploykey.pem -o StrictHostKeyChecking=no" --stats --progress ./docker-compose-prod.yml  root@$SERVER_IP:/var/www/prod/
+    - rsync -zrSlh -e "ssh -i deploykey.pem -o StrictHostKeyChecking=no" --stats --progress ./src/themes/embodied-kiddos  root@$SERVER_IP:/var/www/prod/themes/
