@@ -1,19 +1,28 @@
 @use "sass:map";
 
 $palette: (
-  'black': #000000,
+  'black': #0a0a0a,
   'white': #ffffff,
+  // Grays
+  'gray-darkest': #152632,
+  'gray-darker': #20303C,
+  'gray-dark': #273641,
+  'gray': #35434E,
+  'gray-light': #56626B,
+  'gray-lighter': #798289,
+  'gray-lightest': #D0D4D6,
+  // Theme
   'primary': #33614C,
   'secondary': #092B4C,
-  'gold': #C48600,
-  'peach': #FAC7A0,
-  'champagne': #F0E7CE
+  'orange': #EBAC71,
+  'gold': #FFE1A5,
+  'pink': #D79597
 );
 
-$peach: map-get($palette, 'peach');
+$gold: map-get($palette, 'gold');
 
 $shades: (
-  'peach-lighter': darken($peach, 66%)
+  'gold-darker': darken($gold, 25%)
 );
 
 
@@ -21,3 +30,6 @@ $colors: map-merge(
   $palette,
   $shades
 );
+
+
+

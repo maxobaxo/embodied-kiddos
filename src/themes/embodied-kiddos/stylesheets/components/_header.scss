@@ -4,18 +4,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .site-title {
-      color: map-get($colors, 'champagne');
-      text-shadow: 0px 2px 4px rgba(5, 5, 5, 0.5);
+    .header-logo {
+      width: 100%;
+      height: auto;
     }
   }
   .site-description {
     @extend .lead;
     text-align: center;
-    color: map-get($colors, 'champagne');
+    color: map-get($colors, 'gray');
     font-size: map-get($font-sizes, 'sm');
     font-style: italic;
-    text-shadow: 0px 2px 4px rgba(5, 5, 5, 0.5);
   }
 }
 

@@ -38,21 +38,14 @@
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title">
-					<?php bloginfo( 'name' ); ?>
-
-				</h1>
-				<?php
-			else :
-				?>
+			if ( !is_front_page() && !is_home() ) : ?>
 				<p class="site-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						<?php bloginfo( 'name' ); ?>
 					</a>
-				</p>
-				<?php
+				</p> <?php
+			else : ?>
+				<img class="header-logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/brand/facebook_cover_photo_1.png'; ?>" alt="Embodied Kiddos Brand Logo" /> <?php
 			endif;
 			$ek_description = get_bloginfo( 'description', 'display' );
 			if ( $ek_description || is_customize_preview() ) :

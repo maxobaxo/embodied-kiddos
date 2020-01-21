@@ -10,28 +10,29 @@
       padding: map-get($space, 'xs') map-get($space, 'sm');
       font-family: $font-family-serif;
       font-size: map-get($font-sizes, 'xs');
-      color: map-get($colors, 'secondary');
-      border: map-get($colors, 'peach') 2px solid;
+      color: map-get($colors, 'gray-lighter');
+      border: map-get($colors, 'gold') 2px solid;
       border-radius: 5px;
     }
     input {
       margin-right: map-get($space, 'xs');
+      transition: all 0.3s ease;
       &::placeholder {
-        color: map-get($colors, 'secondary');
+        color: map-get($colors, 'gray');
       }
       &:focus {
-        border: map-get($colors, 'secondary') 2px solid;
+        border: map-get($colors, 'orange') 2px solid;
       }
     }
     button {
       font-weight: bold;
-      font-style: italic;
+      font-size: 1rem;
       cursor: pointer;
-      background-color: map-get($colors, 'peach');
+      background-color: map-get($colors, 'white');
       transition: all 0.3s ease;
       &:hover {
-        color: map-get($colors, 'peach');
-        background-color: map-get($colors, 'secondary');
+        border-color: map-get($colors, 'orange');
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
       }
     }
   }
