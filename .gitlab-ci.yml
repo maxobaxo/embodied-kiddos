@@ -9,6 +9,7 @@ cache:
   paths:
     - node_modules/
     - apt-cache
+    - dist/
 
 build:
   stage: build
