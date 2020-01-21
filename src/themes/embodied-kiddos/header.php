@@ -45,7 +45,7 @@
 					</a>
 				</p> <?php
 			else : ?>
-				<img class="header-logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/brand/facebook_cover_photo_1.png'; ?>" alt="Embodied Kiddos Brand Logo" /> <?php
+				<img class="header-logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/brand/twitter_header_photo_1.png'; ?>" alt="Embodied Kiddos Brand Logo" /> <?php
 			endif;
 			$ek_description = get_bloginfo( 'description', 'display' );
 			if ( $ek_description || is_customize_preview() ) :
