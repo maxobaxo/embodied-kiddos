@@ -29,7 +29,7 @@ get_header();
 								Hi, Everybody! I hosted a panel on eating disorder prevention and body liberation for the Body Trust Summit, a free online conference about divesting from diet culture. Get your ticket now!
 							</p>
 							<div class="d-flex justify-content-center w-100 mb-4">
-								<a href="http://" target="_blank" rel="noopener noreferrer" class="is-button">Free Ticket</a>
+								<a href="https://benourished.org/summit/friend/Klrscher/" target="_blank" rel="noopener noreferrer" class="is-button">Free Ticket</a>
 							</div>
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/Zrdsx_Qy0V0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
