@@ -8,7 +8,7 @@
 body {
   font-family: $font-family-serif;
   font-size: 1rem;
-  line-height: 1;
+  line-height: 1.25;
   color: map-get($colors, 'black');
 }
 
@@ -64,4 +64,26 @@ body.admin-bar {
   flex-direction: column;
   // justify-content: space-between;
   min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  font-family: $font-family-sans;
+  color: map-get($colors, 'primary');
+  transition: all 0.3s ease;
+  &:hover {
+    color: map-get($colors, 'secondary');
+  }
+  &.is-button {
+    border: 1px solid map-get($colors, 'primary');
+    border-radius: 4px;
+    padding: (map-get($space, 'xs') / 2) map-get($space, 'xs');
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: none;
+      color: map-get($colors, 'white');
+      background-color: map-get($colors, 'primary');
+      border-color: map-get($colors, 'primary');
+    }
+  }
 }

@@ -11,7 +11,7 @@
       font-family: $font-family-serif;
       font-size: map-get($font-sizes, 'xs');
       color: map-get($colors, 'gray-lighter');
-      border: map-get($colors, 'gold') 2px solid;
+      border: map-get($colors, 'primary') 1px solid;
       border-radius: 5px;
     }
     input {
@@ -21,18 +21,19 @@
         color: map-get($colors, 'gray');
       }
       &:focus {
-        border: map-get($colors, 'orange') 2px solid;
+        box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.25);
       }
     }
     button {
-      font-weight: bold;
-      font-size: 1rem;
+      @extend a.is-button;
       cursor: pointer;
+      font-family: $font-family-sans;
+      padding: (map-get($space, 'xs') / 2) map-get($space, 'xs');
+      color: map-get($colors, 'primary');
       background-color: map-get($colors, 'white');
       transition: all 0.3s ease;
       &:hover {
-        border-color: map-get($colors, 'orange');
-        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+        box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.25);
       }
     }
   }

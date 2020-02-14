@@ -1,14 +1,20 @@
 .site {
-  // background-color: map-get($colors, 'primary');
   .site-main {
     height: 100%;
     margin: 0 auto;
-    padding: map-get($space, 'sm');
-    max-width: 768px;
 
     .newsletter-invite {
       text-align: center;
-      color: map-get($colors, 'champagne')
+      color: map-get($colors, 'champagne');
+      margin-bottom: map-get($space, 'xs');
     }
+  }
+}
+
+.ek {
+  &-divider {
+    height: 1px;
+    width: 100%;
+    background-color: map-get($colors, 'primary');
   }
 }

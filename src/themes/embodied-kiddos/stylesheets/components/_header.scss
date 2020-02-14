@@ -8,6 +8,7 @@
       width: 100%;
       height: auto;
       max-width: 768px;
+      padding: map-get($space, 'md') 0;
     }
   }
   .site-description {
@@ -16,6 +17,7 @@
     color: map-get($colors, 'gray');
     font-size: map-get($font-sizes, 'sm');
     font-style: italic;
+    margin-bottom: map-get($space, 'xs');
   }
 }
 

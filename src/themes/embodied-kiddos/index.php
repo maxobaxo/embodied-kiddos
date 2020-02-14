@@ -15,10 +15,38 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
+	<div class="ek-divider container my-5"></div>
+	<div id="primary" class="content-area container">
 		<main id="main" class="site-main">
-			<p class="newsletter-invite">Subscribe to get updates on news, events, and service offerings</p>
-			<?php echo do_shortcode('[mc4wp_form id="8"]'); ?>
+			<div class="row">
+				<div class="col-md-8 offset-md-2">
+					<div class="card m-3">
+						<div class="card-header">
+							<img src="https://benourished.org/wp-content/uploads/2019/12/BodyTrust_summit_800px.jpg" alt="" class="card-img-top p-2">
+						</div>
+						<div class="card-body">
+							<p class="card-text">
+								Hi, Everybody! I hosted a panel on eating disorder prevention and body liberation for the Body Trust Summit, a free online conference about divesting from diet culture. Get your ticket now!
+							</p>
+							<div class="d-flex justify-content-center w-100 mb-4">
+								<a href="http://" target="_blank" rel="noopener noreferrer" class="is-button">Free Ticket</a>
+							</div>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/Zrdsx_Qy0V0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+
+				</div>
+			</div>
+
+			<div class="m-3">
+				<p class="newsletter-invite">Subscribe to my newsletter!</p>
+				<?php echo do_shortcode('[mc4wp_form id="8"]'); ?>
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
